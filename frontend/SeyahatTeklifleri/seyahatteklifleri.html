@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahat Teklifleri</title>
+    <link rel="stylesheet" href="seyahatteklifleri.css">
+    <script src="seyahatteklifleri.js" defer></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <div class="marquee-container">
+    <span class="marquee-text">İndirim Kodunuz: SEYAHAT10 — Hemen Kullanın!</span>
+</div>
+<div class="container my-5">
+    <div class="row g-4">
+
+        <!-- Kart 1 -->
+        <div class="col-md-4 col-sm-6 kartgenel" >
+            <div class="card custom-card h-100 ">
+                <img src="otel1.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                   
+                    <h5 class="card-title">Hilton İstanbul Kozyatağı</h5>
+                    <p class="card-text">Junior Suite – 4 Kişi / 2 Gece:
+                         
+3.300 TL
+
+Ekstra Yatak:
++480 TL
+
+Hafta Sonu Farkı:
++240 TL**</p>
+<a href="#" class="btn btn-primary w-100 kartgenel">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card custom-card h-100">
+                <img src="otel2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">İbis Styles İstanbul Merter</h5>
+                    <p class="card-text">Twin Oda – 5 Kişi / 1 Gece:
+1.950 TL
+
+Ekstra Yatak:
++420 TL
+
+Hafta Sonu Farkı:
++180 TL</p>
+<a href="#" class="btn btn-primary w-100 kartgenel">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card custom-card h-100">
+                <img src="otel3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rixos Tersane İstanbul</h5>
+                    <p class="card-text">Superior Oda – 3 Kişi / 1 Gece:
+2.650 TL
+
+Ekstra Yatak:
++500 TL
+
+Hafta Sonu Farkı:
++220 TL
+</p><a href="#" class="btn btn-primary w-100 kartgenel">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 4 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card custom-card h-100 kartgenel">
+                <img src="otel4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wyndham Grand İstanbul Levent Hotel</h5>
+                    <p class="card-text">Deluxe Triple Oda – 3 Kişi / 2 Gece:
+3.900 TL
+
+Ekstra Yatak:
++550 TL
+
+Hafta Sonu Farkı:
++260 TL</p>
+<a href="#" class="btn btn-primary w-100" id="kart4">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 5 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card custom-card h-100 kartgenel ">
+                <img src="otel5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Radisson Hotel </h5>
+                    <p class="card-text">Deluxe Oda – 4 Kişi / 2 Gece:
+3.450 TL
+
+Ekstra Yatak:
++550 TL
+
+Hafta Sonu Farkı:
++250 TL</p>
+<a href="#" class="btn btn-primary w-100 kartgenel">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 6 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card custom-card h-100 kartgenel">
+                <img src="otel6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Maestro Hotel</h5>
+                    <p class="card-text">Standart Oda – 2 Kişi / 1 Gece:
+2.150 TL
+
+Ekstra Yatak:
++450 TL
+
+Hafta Sonu Farkı:
++200 TL</p>
+<a href="#" class="btn btn-primary w-100" id="kart6">Rezervasyon Yaptır</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="modal fade" id="ModalBaslangic" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalBasligi">Rezervasyon Bilgileri</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="ModalIcerigi">
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success simdiRezerveEt">Şimdi Rezerve Et</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalButonu">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="purchaseModalTitle">Ödeme ve Satın Alma</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+       
+       <!--Satın Alma Kısmı-->
+        <form>
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Ad Soyad</label>
+            <input type="text" class="form-control" id="nameInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Kart Numarası</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+          </div>
+          <div class="row">
+            <div class="col-6 mb-3">
+              <label for="expiryDate" class="form-label">Son Kullanma Tarihi</label>
+              <input type="text" class="form-control" id="expiryDate" placeholder="AA/YY" required>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="XXX" required>
+            </div>
+          </div>
+          <div class="mb-3">
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onaytiki" required>
+                <label class="form-check-label" for="onaytiki">
+                  Satış sözleşmesini okudum ve kabul ediyorum.
+                </label>
+             </div>
+          </div>
+          <input type="text" id="ModalKod" placeholder="Kupon Giriniz...">
+          <button id="ModalKodButonu" style="cursor:pointer">Uygula</button>
+        </form>
+      </div>
+
+      <!--Modal Kısmı-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+        <button type="submit" class="btn btn-success" id="OdemeBitir">Ödemeyi Tamamla</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

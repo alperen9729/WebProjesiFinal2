@@ -1,0 +1,15 @@
+const db = mysql_2.createConnection({
+  host: "localhost",
+  user: "admin",
+  password: "",  
+  database: "seyahat_planlayici"
+}); 
+
+
+http://localhost:3005/
+
+     Admin Paneli
+
+Kullanıcı Adı : admin
+
+Şifre : admin

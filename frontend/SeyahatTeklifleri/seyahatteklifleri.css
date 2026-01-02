@@ -1,0 +1,96 @@
+
+          /* layout */
+    .cards-wrapper { margin-top: 40px; }
+
+    /* performans uyarısı: tarayıcıya hangi özelliklerin değişeceğini söyle */
+    .custom-card { 
+      transition: transform 0.28s cubic-bezier(.2,.8,.2,1), filter 0.28s ease, box-shadow 0.28s ease;
+      will-change: transform, filter;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* hovered kart büyüsün, üstte dursun */
+    .custom-card:hover {
+      transform: scale(1.06);
+      z-index: 10;               /* diğerlerinin üstünde gözükmesi için */
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+
+    /* wrapper içinde - sadece hover edilmeyen kartları blurla */
+    .cards-wrapper:hover .custom-card:not(:hover) {
+      filter: blur(4px) saturate(0.9);
+      transform: scale(0.995);   /* küçük bir sıkıştırma ile farkı vurgula */
+      opacity: 0.95;
+    }
+
+    /* küçük ekranlarda hover olmadığı için efektleri azaltmak isteyebilirsin */
+    @media (max-width: 767px) {
+      .cards-wrapper:hover .custom-card:not(:hover) {
+        filter: none; 
+        transform: none;
+        opacity: 1;
+      }
+    }
+
+    
+       .marquee-container {
+            width: 100%;
+            background: #ffe066;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            position: relative;
+            animation: slideRight 10s linear infinite;
+            font-size: 1.35rem;
+            font-weight:bolder;
+        }
+
+        /* Soldan → Sağa doğru animasyon */
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(170%);
+            }
+        }
+
+           /* Arka plan blur */
+    .blurred {
+        filter: blur(6px);
+        pointer-events: none;
+        user-select: none;
+    }
+
+.active-card {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    z-index: 9999;
+    width: 400px;
+    transition: 0.3s ease;
+}
+
+/* Geri kalan kartları blurla */
+.blurred-card {
+    filter: blur(6px);
+    opacity: 0.3;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Arkaplan karartma */
+.backdrop-active {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+}
+

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'montserrat' , sans-serif;
+   
+    
+}
+.app{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.baslik{
+    padding: 50px 20px 30px 20px;}
+.baslik h1{
+    font-size: 50px;
+    color: #fbb034;
+    text-shadow: 1px 3px rgba(0,0,0,.9);
+}
+.baslik input{
+    width: 100%;
+    padding:10px;
+    background: transparent;
+    border :0;
+    outline: 0;
+    border-bottom: 2px solid #fbb034;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+}
+.sehir{
+    font-size:35px;
+    font-weight:500;
+    margin-bottom:10px;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+
+}
+.sicaklik{
+    font-size : 100px;
+    font-weight:700;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px rgba(0,0,0,1);
+}
+.durum{
+    font-size:25px;
+    font-style: italic;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+}
+.minmax{
+    font-size:25px;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+}

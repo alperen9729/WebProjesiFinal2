@@ -1,0 +1,82 @@
+
+ #degisken_alan {
+    display: "block";
+    width: 20%;
+    margin-top: -20px;
+}
+
+p {
+  color: red;
+}
+
+.secici{
+    position:sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.otel_Karti :hover{
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+}
+
+.form-control{
+  transition: transform .2s ease !important;
+}
+
+.form-control:hover{
+   cursor: pointer;
+   transform: translateY(2px);
+}
+
+.btn-success{
+  transition:transform .2s ease  !important;
+}
+
+.btn-success:hover{
+  transform: scale(1.1,1.1);
+}
+
+
+.baslik {
+  color: cornflowerblue;
+  font-family:cursive;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    position: relative;
+    left:2%;
+     text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+   .baslik::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color:darkblue;
+    display: block;
+    margin: 3px auto 0;
+    border-radius: 6px;
+  }
+
+  #degisken_alan{
+    margin-top: -3.2%;
+  }
+
+  #filtre_alani{
+      position:sticky;
+      top:5px;
+      z-index: 10;
+  }
+
+  .modalKapatmaButonu:hover{
+       background-color:rgba(255,0,0,1) !important; 
+  }
+
+  .border-success{
+         background-color: rgba(255, 255, 255, 0.85) !important;
+         
+  }
+
+  #bilgiModal .modal-content{
+    background-color: rgba(255, 255, 255, 0.85) !important;
+  }

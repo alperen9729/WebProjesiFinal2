@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+   <link rel="stylsheet" src="anasayfa.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 p-3 rounded shadow-sm">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.imgyukle.com/2025/12/27/SkahdG.png" alt="Logo" width="60" height="60">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <!-- Sol Menü -->
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="">Anasayfa</a></li>
+      <li class="nav-item"><a class="nav-link" href="/SeyahatiniziPlanlayin/seyahat_planlama.html" id="planlama_linki">Seyahatinizi Planlayın</a></li>
+      <li class="nav-item"><a class="nav-link" href="/TurkiyeOzel/turkiyeozel.html">Türkiye Özel</a></li>
+      <li class="nav-item"><a class="nav-link" href="/kiralanan_oda">Seyahatlerim</a></li>
+    </ul>
+
+    <!-- Ara Butonu -->
+    <form class="d-flex align-items-center me-3" role="search">
+      <div class="input-group input-group-sm">
+        <input type="text" class="form-control" placeholder="Ara...">
+        <button class="btn btn-outline-primary btn-sm" type="submit">Ara</button>
+      </div>
+    </form>
+
+    <!-- Giriş / Çıkış Alanı -->
+    <div class="d-flex align-items-center">
+      <span id="userDisplay" class="fw-bold me-3"></span>
+
+      <a href="/cikis_yap" class="btn btn-primary btn-sm">Çıkış Yap</a>
+   
+
+    </div>
+   
+
+ 
+</nav>
+
+
+
+<div class="hero-banner position-relative text-white">
+    <img src="https://i.imgyukle.com/2025/12/21/SPFGvI.jpg"
+         class="img-fluid w-100" style="height: 500px; object-fit: cover;">
+        
+  
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+      <h1 class="fw-bold display-4 text-shadow" style="background-color: red;">Türkiye’yi Keşfet!</h1>
+      <p class="lead text-shadow" style="color:black; font-weight: 1000;">Hayalinizdeki seyahat burada başlıyor.</p>
+      <a href="/SeyahatiniziPlanlayin/seyahat_planlama.html" class="btn btn-primary btn-lg mt-2">
+        Seyahat Planlamaya Başla
+      </a>
+    </div>
+  </div>
+
+<div class="container-fluid" id="degisken_alan">
+    
+  <!--Sehir kartlari bolumu-->
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">En Popüler Türkiye Şehirleri</h2>
+    <div class="row g-4">
+    
+        <!-- İstanbul -->
+        <div class="col-md-4">
+        <div class="card shadow h-100">
+            <img src="https://i.imgyukle.com/2025/12/21/SPF1sS.webp"
+                class="card-img-top" alt="İstanbul">
+            <div class="card-body">
+            <h5 class="card-title">İstanbul</h5>
+            <p class="card-text">Tarihin, kültürün ve modern yaşamın kalbi.</p>
+            <a href="/SeyahatiniziPlanlayin/seyahat_planlama.html" class="btn btn-primary">Keşfet</a>
+          </div>
+        </div>
+        </div>
+    
+        <!-- Kapadokya -->
+        <div class="col-md-4">
+        <div class="card shadow h-100">
+            <img src="https://i.imgyukle.com/2025/12/21/SPF2Vs.webp"
+                class="card-img-top" alt="Kapadokya">
+            <div class="card-body">
+            <h5 class="card-title">Kapadokya</h5>
+            <p class="card-text">Balon turları ve peri bacaları ile ünlü.</p>
+            <a href="/SeyahatiniziPlanlayin/seyahat_planlama.html" class="btn btn-primary">Keşfet</a>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Antalya -->
+        <div class="col-md-4">
+        <div class="card shadow h-100">
+            <img src="https://i.imgyukle.com/2025/12/21/SPFKtb.jpg"
+                class="card-img-top" alt="Antalya">
+            <div class="card-body">
+            <h5 class="card-title">Antalya</h5>
+            <p class="card-text">Deniz, güneş ve turizmin başkenti.</p>
+            <a href="/SeyahatiniziPlanlayin/seyahat_planlama.html" class="btn btn-primary">Keşfet</a>
+          </div>
+        </div>
+        </div>
+    
+    </div>
+    
+      <!-- TEMA SEÇ BÖLÜMÜ -->
+<section class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">Tema Seç</h2>
+  
+    <div class="row g-4">
+  
+      <!-- Deniz Tatili -->
+      <div class="col-md-4">
+        <div class="card shadow-sm tema-kart">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" 
+               class="card-img-top" alt="Deniz Tatili">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Deniz Tatili</h5>
+            <p class="card-text">Türkiye’nin en güzel sahil şehirlerini keşfet.</p>
+            <a id="tema-deniz" href="#" class="btn btn-primary">Keşfet</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Kültür Turu -->
+      <div class="col-md-4">
+        <div class="card shadow-sm tema-kart">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" 
+               class="card-img-top" alt="Kültür Turu">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Kültür Turu</h5>
+            <p class="card-text">Tarihi şehirler ve kültürel rotaları deneyimle.</p>
+            <a id="tema-kultur" href="#" class="btn btn-primary">Keşfet</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Dağ Turu -->
+      <div class="col-md-4">
+        <div class="card shadow-sm tema-kart">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+               class="card-img-top" alt="Dağ Turu">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Dağ Turu</h5>
+            <p class="card-text">Doğa yürüyüşü, kamp ve dağ atmosferi.</p>
+            <a id="tem-dag" href="#" class="btn btn-primary">Keşfet</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+      
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Sol bölüm -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Türkiye Travel</h5>
+        <p>Türkiye’nin en güzel şehirlerini keşfedin.  
+        Seyahat planlama, öneriler ve tematik turlar.</p>
+      </div>
+
+      <!-- Hızlı Menü -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Hızlı Menü</h5>
+        <ul class="list-unstyled">
+          <li><a href="" class="footer-link">Anasayfa</a></li>
+          <li><a href="" class="footer-link">Seyahatinizi Planlayın</a></li>
+          <li><a href="" class="footer-link">Türkiye Özel</a></li>
+        </ul>
+      </div>
+
+      <!-- İletişim -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">İletişim</h5>
+        <p>Email: ahievran@kirsehir.com</p>
+        <p>Telefon: +90 123 456 789</p>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <p class="text-center mb-0">© 2025 Türkiye Travel – Tüm Hakları Saklıdır</p>
+
+  </div>
+</footer>
+<script src = "anasayfa.js"></script>
+</body>
+</html>

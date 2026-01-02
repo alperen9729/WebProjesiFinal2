@@ -1,0 +1,91 @@
+.navbar .nav-link {
+  transition: transform 0.2s ease, color 0.2s ease;
+  
+}
+
+.navbar .nav-link:hover {
+  transform: scale(1.12); /* biraz büyütür */
+  color: #000;             /* istersen renk değişimi */
+}
+.navbar .btn:hover {
+  transform: scale(1.10);
+  transition: transform 0.2s ease;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 18px;   
+  margin-left: 18px;    
+}
+.navbar-brand img {
+  transition: transform 0.25s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(2.15); /* Üzerine gelince hafif büyür */
+}
+
+.text-shadow {
+text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.tema-kart {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tema-kart:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tema-kart img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+/* dark mode icin */
+
+.dark-mode {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .navbar, 
+.dark-mode footer {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
+.dark-mode .card {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.dark-mode .tema-kart {
+  background-color: #222;
+}
+
+.dark-mode .hero-banner h1,
+.dark-mode .hero-banner p {
+  color: #fff !important;
+}
+
+.dark-mode a {
+  color: #fff !important;
+}
+
+#darkModeBtn {
+  transition: 0.3s ease;
+}
